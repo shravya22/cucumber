@@ -25,7 +25,7 @@ public class AccountServiceImpl implements IAccountService{
 	@Override
 	public Account createAccount(Customer customer, double amount) throws InvalidCustomer, InvalidOpeningBalance {
 		if(customer==null) 
-			throw new InvalidCustomer("Invalid Customer!");
+			throw new InvalidCustomer("Sorry! Customer refers Null!");
 		if(amount<500) 
 			throw new InvalidOpeningBalance("Sorry! Invalid Opening Balance given.");
 		
